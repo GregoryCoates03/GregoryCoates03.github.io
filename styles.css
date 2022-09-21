@@ -1,0 +1,117 @@
+html {
+	scroll-padding-top: 75px;
+	color: white;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 75px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	background-color: #265077;
+	font-size: larger;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+}
+
+a:hover {
+	color: #022140;
+}
+
+a img {
+	width: 400px;
+	height: 350px;
+}
+
+a img:hover {
+	border: 2px solid green;
+}
+
+body {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(#1A1A1D, #6F2232);
+
+}
+
+#welcome-section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+}
+
+#welcome-section h1 {
+	color: #C3073F;
+	font-size: 5rem;
+}
+
+#welcome-section a {
+	background-color: #C3073F;
+	border-radius: 10px;
+	border: none;
+	width: 150px;
+	height: 30px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects {
+	width: 100vw;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.project-links {
+	display: grid;
+	gap: 1rem;
+}
+
+@media (min-width: 900px) {
+	.project-links {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+#links {
+	width: 100vw;
+	height: calc(100vh - 75px);
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#links h1 {
+	font-size: 5rem;
+}
+
+a i {
+	margin-right: 30px;
+	margin-left: 30px;
+}
